@@ -1,0 +1,19 @@
+{
+  "name": "morrow-digital-world",
+  "version": "0.13.0",
+  "private": true,
+  "type": "module",
+  "description": "A persistent multi-agent digital town",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check server.mjs && node --check lib/world.mjs && node --check lib/interaction.mjs && node --check lib/initiative.mjs && node --check lib/effects.mjs && node --check lib/society.mjs && node --check lib/mind.mjs && node --check lib/context.mjs && node --check lib/ollama.mjs && node --check lib/models.mjs && node --check lib/recovery.mjs && node --check lib/perception.mjs && node --check public/digital.js && node --check public/map-camera.js && node --check public/society.js && node --check public/app.js && node --check examples/external-agent.mjs && node --check lib/landscape.mjs && node --check public/terrain.js && node --check public/scene-render.js && node --check public/world-view.js && node --check lib/navigation.mjs && node --check lib/food.mjs && node --check lib/decision.mjs && node --check lib/tasks.mjs && node --check lib/operations.mjs && node --check public/operations.js && node --check lib/pantry.mjs && node --check public/care.js && node --check lib/behavior.mjs && node --check public/behavior.js"
+  },
+  "dependencies": {
+    "nodemailer": "^10.2.1"
+  }
+}

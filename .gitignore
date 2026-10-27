@@ -1,0 +1,22 @@
+node_modules/
+data/
+.env
+.env.*
+!.env.example
+.agent.env
+.agent.env.*
+!.agent.env.example
+*.log
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+*.key
+*.pem
+*.p12
+
+# Local screenshots, machine diagnostics and temporary verification scripts.
+/*.png
+/docs/MODEL-*.md
+/.qa-*.mjs
+/.probe-*.mjs
